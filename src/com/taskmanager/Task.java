@@ -10,7 +10,7 @@ public class Task {
 
     //Constructer
 
-    public Task(String title, String description, LocalDate dueDate, boolean completed) {
+    public Task(String title, String description, LocalDate dueDate) {
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;

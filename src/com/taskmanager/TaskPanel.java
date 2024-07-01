@@ -14,7 +14,7 @@ public class TaskPanel extends JPanel {
         listModel = new DefaultListModel<>();
         taskList = new JList<>(listModel);
         taskList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        taskList.addListSelectionListener(e -> updatDescriptionArea());
+        taskList.addListSelectionListener(e -> updateDescriptionArea());
 
         JScrollPane listScrollPane = new JScrollPane(taskList);
         listScrollPane.setPreferredSize(new Dimension(200, 0));

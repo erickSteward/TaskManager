@@ -27,7 +27,7 @@ public class TaskManagerFrame extends JFrame{
         setJMenuBar(menuBar);
 
         //Create the main Content
-        taskPanel = new TaskPanel();
+        taskPanel = new TaskPanel(this);
         add(taskPanel, BorderLayout.CENTER);
 
         // Create a toolBar
@@ -45,7 +45,7 @@ public class TaskManagerFrame extends JFrame{
         dialog.setVisible(true);
 
         if (dialog.getTask() != null){
-            taskPanel.addTask(dialog.getTask();
+            taskPanel.addTask(dialog.getTask());
         }
     }
 }
